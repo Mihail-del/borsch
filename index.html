@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Borsch.UA</title>
+	<link rel="icon" href="images/icon.png" type="image/x-icon">
+	<link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<header  id="fixedheader" class="header">
+		<img id="header_img" src="images/logo.png">
+		<button id="cart_btn"><img src="images/cart.png" id="cart"></button>
+		<p id="number">0</p>
+	</header>
+
+	<div class="cart-widget" id="cart-widget">
+		<button id="cart_close">✕</button>
+		<h1>Your order</h1>
+		<div class="list_orders">
+			<ul id="order_list"></ul>
+		</div>
+	</div>
+
+	<section class="carusel">
+		<div class="carousel-container">
+	        <div id="image-carousel" class="carousel">
+	            <img src="images/carusel1.png" alt="Image 1" class="carousel-item">
+	            <img src="images/carusel2.png" alt="Image 2" class="carousel-item">
+	            <img src="images/carusel3.png" alt="Image 3" class="carousel-item">
+	            <img src="images/carusel4.png" alt="Image 3" class="carousel-item">
+	        </div>
+    	</div>
+	</section>
+
+	<section class="main">
+		<div class="bg"></div>
+		<div class="left">
+			<p id="frase">"No matter how much you travel, you still yearn for home. I want borsch!"</p>
+			<p id="author">Andrey Danylko</p>
+		</div>
+		<div class="middle">
+			<h1>Menu</h1>
+			<div class="links">
+				<a href="#first_head">Soups</a>
+				<a href="#snacks_head">Snacks</a>
+				<a href="#meat_head">Meat & Fish</a>
+				<a href="#desserts_head">Desserts</a>
+				<a href="#drinks_head">Drinks</a>
+			</div>
+			<div class="menu">
+
+				<div class="first_head" id="first_head">
+					<h2>Soups</h2>
+					<div class="first_dishes" id="first_dishes">
+						<div class="m1">
+							<h1>Pickle soup</h1>
+							<img src="images/m1.png">
+							<p>Meat broth, pickles, potato, carrot, sour cream, onion, bay leaf, black pepper</p>
+							<button id="pickle_btn" class="toggle-button" data-target="Pickle soup">
+								<img id="pickle_coin" src="images/coin.png">
+							</button>
+						</div>
+						<div class="m2">
+							<h1>Borsch</h1>
+							<img src="images/m2.png">
+							<p>Potato, carrot, beet, sour cream, onion, pork, vinegar, salo, paprika</p>
+							<button id="borsch_btn" class="toggle-button" data-target="Borsch">
+								<img id="borsch_coin" src="images/coin.png">
+							</button>
+						</div>
+						<div class="m3">
+							<h1>Mushroom soup</h1>
+							<img src="images/m3.png">
+							<p>White mashrooms, chanterelle, butter mushroom, potato, carrot, olives, beans</p>
+							<button id="mushroom_btn" class="toggle-button" data-target="Mushroom soup">
+								<img id="mushroom_coin" src="images/coin.png">
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="snacks_head" id="snacks_head">
+					<h2>Snacks</h2>
+					<div class="snacks_dishes" id="snacks_dishes">
+						<div class="m4">
+							<h1>Herring</h1>
+							<img src="images/m4.png">
+							<p>Herring, white onion, pink onion, green pepper, lemon, tomatoes</p>
+							<button id="herring_btn" class="toggle-button" data-target="Herring">
+								<img id="herring_coin" src="images/coin.png">
+							</button>
+						</div>
+						<div class="m5">
+							<h1>Sausages</h1>
+							<img src="images/m5.png">
+							<p>Ukrainian sausages, boiled sausage, dried sausage, dried meat, mustard</p>
+							<button id="sausages_btn" class="toggle-button" data-target="Sausages">
+								<img id="sausages_coin" src="images/coin.png">
+							</button>
+						</div>
+						<div class="m6">
+							<h1>Aspic</h1>
+							<img src="images/m6.png">
+							<p>Meat broth, chicken meat, green pepper, salad, lemon, mustard</p>
+							<button id="aspic_btn" class="toggle-button" data-target="Aspic">
+								<img id="aspic_coin" src="images/coin.png">
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="meat_head" id="meat_head">
+					<h2>Meat & Fish</h2>
+					<div class="meat_dishes" id="meat_dishes">
+						<div class="m7">
+							<h1>Shank</h1>
+							<img src="images/m7.png">
+							<p>Pork, tomato, cucumber, mushrooms, potato, beans, garlic souse</p>
+							<button id="shank_btn" class="toggle-button" data-target="Shank">
+								<img id="shank_coin" src="images/coin.png">
+							</button>
+						</div>
+						<div class="m8">
+							<h1>Stuffed pike</h1>
+							<img src="images/m8.png">
+							<p>Pike, lemon, tomato, pickle, bread, milk, black pepper, olives, parsley</p>
+							<button id="pike_btn" class="toggle-button" data-target="Pike">
+								<img id="pike_coin" src="images/coin.png">
+							</button>
+						</div>
+						<div class="m9">
+							<h1>Lamb ribs</h1>
+							<img src="images/m9.png">
+							<p>Lamb ribs, oil, black pepper, garlic, parsley, tomato, ketchup, mustard</p>
+							<button id="lamb_btn" class="toggle-button" data-target="Lamb">
+								<img id="lamb_coin" src="images/coin.png">
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="desserts_head" id="desserts_head">
+					<h2>Desserts</h2>
+					<div class="desserts_dishes" id="desserts_dishes">
+						<div class="m10">
+							<h1>Poppy pie</h1>
+							<img src="images/m10.png">
+							<p>Pike, lemon, wheat flour, milk, chicken eggs, sugar, honey butter, oil</p>
+							<button id="poppy_btn" class="toggle-button" data-target="Poppy pie">
+								<img id="poppy_coin" src="images/coin.png">
+							</button>
+						</div>
+						<div class="m11">
+							<h1>Strudel</h1>
+							<img src="images/m11.png">
+							<p>Apples, walnut, wheat flour, oil, butter, sugar, powdered sugar, cinamon, raisins</p>
+							<button id="strudel_btn" class="toggle-button" data-target="Strudel">
+								<img id="strudel_coin" src="images/coin.png">
+							</button>
+						</div>
+						<div class="m12">
+							<h1>Cherry pie</h1>
+							<img src="images/m12.png">
+							<p>Cherry, wheat flour, butter, oil, sugar, vanila, cinamon, powdered sugar</p>
+							<button id="cherry_btn" class="toggle-button" data-target="Cherry pie">
+								<img id="cherry_coin" src="images/coin.png">
+							</button>
+						</div>
+					</div>
+				</div>
+
+				<div class="drinks_head" id="drinks_head">
+					<h2>Drinks</h2>
+					<div class="drinks_dishes" id="drinks_dishes">
+						<div class="m13">
+							<h1>Horilka</h1>
+							<img src="images/m13.png">
+							<table>
+								<tr>
+									<td id="td_text">Honey</td>
+									<td><button id="h_honey_btn" class="toggle-button" data-target="Honey horilka">
+											<img id="h_honey_coin" src="images/coin.png">
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td id="td_text">Pepper</td>
+									<td>
+										<button id="h_pepper_btn" class="toggle-button" data-target="Pepper horilka">
+											<img id="h_pepper_coin" src="images/coin.png">
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td id="td_text">Horseradish</td>
+									<td>
+										<button id="h_horse_btn" class="toggle-button" data-target="Honey Horseradish">
+											<img id="h_horse_coin" src="images/coin.png">
+										</button>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="m14">
+							<h1>Wines</h1>
+							<img src="images/m14.png">
+							<table>
+								<tr>
+									<td id="td_text">White</td>
+									<td><button id="w_white_btn" class="toggle-button" data-target="White wine">
+											<img id="w_white_coin" src="images/coin.png">
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td id="td_text">Red</td>
+									<td>
+										<button id="w_red_btn" class="toggle-button" data-target="Red wine">
+											<img id="w_red_coin" src="images/coin.png">
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td id="td_text">Rose</td>
+									<td>
+										<button id="w_rose_btn" class="toggle-button" data-target="Rose wine">
+											<img id="w_rose_coin" src="images/coin.png">
+										</button>
+									</td>
+								</tr>
+							</table>
+						</div>
+						<div class="m15">
+							<h1>Sweet</h1>
+							<img src="images/m15.png">
+							<table>
+								<tr>
+									<td id="td_text">Compote</td>
+									<td><button id="s_compote_btn" class="toggle-button" data-target="Compote">
+											<img id="s_compote_coin" src="images/coin.png">
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td id="td_text">Stewed fruit</td>
+									<td>
+										<button id="s_fruit_btn" class="toggle-button" data-target="Stewed fruit">
+											<img id="s_fruit_coin" src="images/coin.png">
+										</button>
+									</td>
+								</tr>
+								<tr>
+									<td id="td_text">Morse</td>
+									<td>
+										<button id="s_morse_btn" class="toggle-button" data-target="Morse">
+											<img id="s_morse_coin" src="images/coin.png">
+										</button>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<img src="images/coin_s.png">
+				<div class="footer_text">
+					<div class="trademark">
+						<p>Trademark</p>
+				        <img src="images/footer.png">
+			        </div>
+			        <p>National Ukrainian Cuisine Restorant</p>
+			        <p id="adress">Kyiv, St. Myshugi 1</p>
+			        <p id="hours">Daily: 10:00 - 24:00</p>
+			        <p id="made_by">Made by Mykhailo | mihail.pulov.247@gmail.com</p>
+				</div>
+			</div>
+		</div>
+
+		<div class="right">
+			<h1>Recepts</h1>
+			
+			<button id="open-widget-button-borsch">Borsh Ukrainian</button>
+			<div id="widget-container-borsch" class="widget-borsch">
+		        <div class="widget-borsch-header">
+		            <button class="widget-borsch-close-button" id="widget-borsch-close-button">✕</button>
+		        </div>
+		        <div class="widget-borsch-widget-content">
+		        	<div class="recept-borsch"> 
+			        	<p>Preheat the oven to 200C. In an ovenproof dish, bake the pork ribs for about 30 minutes or until a golden crust forms. Meanwhile, wash and roughly chop the celery root. There is no need to peel it. Cut up the carrots into chunks of about the same size as the celery pieces. Transfer the baked ribs into a large pot, add about 3 litres of water. Add the celery and carrot chunks, and half an unpeeled onion. Bring to a boil and cook over medium heat for about 30 minutes.</p>
+			        	<p>Make the sauteed vegetable base – this is what makes any borscht so flavorful. Dice the sweet bell pepper. Finely dice the tomatoes and the other half of the onion.</p>
+			        	<p>Heat the butter in a frying pan and cook the vegetables until they soften. Add 200ml tomato juice and about 2 tbsp tomato paste and cook for another 5-7 minutes.</p>
+			        	<p>Using a box grater, shred one of the beetroots. Add it to the sauteed vegetables and keep cooking for another 3-4 minutes.</p>
+			        	<p>Using a food processor with a juicing attachment, squeeze the juice out of the other beet (alternatively, you can simply grate it using the fine attachment on your box grater). Add the beet juice or purée and the vegetables into the pot with the ribs and celery, along with the allspice and bay leaves. Salt to taste.</p>
+			        	<p>Wash and peel 3-4 potatoes.</p>
+			        	<p>Dice them roughly and add into the pot with the rib broth. Cut the head of garlic in half and add to the pot.</p>
+			        	<p>Shred the cabbage and set it aside – we will add it to the borscht almost at the very end.</p>
+			        	<p>Once all of the ingredients have cooked through and are tender, add the shredded cabbage to the pot. Cook for 5 more minutes and take the borscht off the heat. Let it rest for at least half an hour before serving with sour cream and finely chopped dill. Keep the borscht in the fridge and remember that it will become even more delicious overnight.</p>
+			        </div>
+			        <div class="borsch-images">
+			        	<img src="images/campfire_pot.gif">
+			        </div>
+		        </div>
+		    </div>
+
+		    <button id="open-widget-button-aspic">Aspic</button>
+			<div id="widget-container-aspic" class="widget-aspic">
+		        <div class="widget-aspic-header">
+		            <button class="widget-aspic-close-button" id="widget-aspic-close-button">✕</button>
+		        </div>
+		        <div class="widget-aspic-widget-content">
+		        	<div class="recept-aspic">
+		        		<p>Ingredients:</p>
+		        		<ul>
+		        			<li>4 qt water</li>
+		        			<li>1 lb chicken thighs or drumsticks </li>rised</li>
+		        			<li>1 large yellow onion pieled whole</li>
+		        			<li>2 tsp large carrots cleaned whole</li>
+		        			<li>2 tbsp gelatin</li>
+		        			<li>1 tbsp salt</li>
+		        			<li>1 tsp pepper</li>
+		        			<li>2 tbsp fresh parsley chopped</li>
+		        			<li>2 tbsp fresh dill chopped</li>
+		        		</ul>
+			        	<p>Place the cooking pot with water, chicken, carrots, onion, salt and pepper to taste. All just together and bring up to boil. Turn heat on really low and let cook for 4 hours.</p>
+			        	<p>Remove carrots and onions. You can use carrots for decorations and you can throw away the onion. Remove chicken from pot. Clean chicken off the bone, break chicken into small pieces. In a 1/4 cup, add room temperature water and dissolve gelatin with water. Once its dissolved add to broth.</p>
+			        	<p>In flat pan place chicken, carrots, and sprinkle with parsley and dill. Pour cooking broth over the chicken and herbs. Let it stay in the fridge to firm up, this process could take about 6 hours.</p>
+			        </div>
+			        <div class="aspic-images">
+			        	<img src="images/bbq.gif">
+			        </div>
+		        </div>
+		    </div>
+
+		    <button id="open-widget-button-varenik">Vareniks with meat</button>
+			<div id="widget-container-varenik" class="widget-varenik">
+		        <div class="widget-varenik-header">
+		            <button class="widget-varenik-close-button" id="widget-varenik-close-button">✕</button>
+		        </div>
+		        <div class="widget-varenik-widget-content">
+		        	<div class="ingredients-varenik">
+		        		<p>Ingredients:</p>
+		        		<ul>
+		        			<li>2 teaspoons unsalted butter</li>
+		        			<li>2 teaspoons extra-virgin olive oil</li>rised</li>
+		        			<li>1/2 pound ground pork, veal, turkey, or chicken</li>
+		        			<li>1/2 small onion, minced/li>
+		        			<li>1 garlic clove, minced</li>
+		        			<li>Kosher salt</li>
+		        			<li>Freshly ground black pepper</li>
+		        			<li>1/4 cup dry white win</li>
+		        			<li>1/4 cup freshly grated Parmigiano-Reggiano cheese</li>
+		        			<li>1 ounce mortadella, finely chopped</li>
+		        			<li>1 large egg, lightly beaten</li>
+		        			<li>1 ounce prosciutto, finely chopped</li>
+		        			<li>Pinch of freshly grated nutmeg</li>
+		        		</ul>
+		        	</div>
+		        	<div class="recept-varenik">
+			        	<p>In a skillet, melt the butter in the oil. Add the ground meat, onion, and garlic and season with salt and pepper. Cook over moderate heat, stirring to break up lumps, until the meat is cooked and the onion is tender, 10 minutes. Add the wine and cook over moderately high heat until evaporated, 4 minutes.</p>
+			        	<p>Scrape the mixture into a food processor and pulse until the meat is finely chopped. Scrape the ravioli filling into a bowl and let cool. Stir in the Parmigiano, mortadella, prosciutto, and nutmeg and season with salt and pepper. Stir in the beaten egg.</p>
+			        </div>
+			        <div class="varenik-images">
+			        	<img id="vareniki" src="images/vareniki.gif">
+			        	<img id="vareniki1" src="images/vareniki1.gif">
+			        </div>
+		        </div>
+		    </div>
+		</div>
+		
+	</section>
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
